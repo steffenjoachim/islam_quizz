@@ -5,12 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './landingpage.component.html',
-  styleUrl: './landingpage.component.scss'
+  styleUrl: './landingpage.component.scss',
 })
-export class LandingpageComponent {
-
-  startQuizz(){
-    
-  }
-
-}
+export class LandingpageComponent {}
