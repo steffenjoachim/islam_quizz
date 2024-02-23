@@ -4,5 +4,5 @@ import { GameMainPageComponent } from './game/game-main-page/game-main-page.comp
 
 export const routes: Routes = [
     {path: '', component: LandingpageComponent},
-    {path: 'quizz', component: GameMainPageComponent},
+    {path: 'quiz', component: GameMainPageComponent},
 ];

@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { AfterViewInit, Component, Input, ElementRef, ViewChild } from '@angular/core';
+// import { SvgIconComponent } from '../svg-icon/svg-icon.component';
 import { QUESTIONS } from '../../../environments/questions';
+import { ExplanationDialogComponent } from '../explanation-dialog/explanation-dialog.component';
+
 
 @Component({
   selector: 'app-game-main-page',
   standalone: true,
-  imports: [],
+  imports: [ExplanationDialogComponent],
   templateUrl: './game-main-page.component.html',
   styleUrl: './game-main-page.component.scss',
 })
@@ -20,6 +24,9 @@ export class GameMainPageComponent {
   rightAnswer: string = '';
   alreadyAskedQuestions: any = [];
   game_over: boolean = false;
+  @Input() randomIndex: number = 0;
+
+  @ViewChild(ExplanationDialogComponent) explanationDialog: ExplanationDialogComponent | undefined;
 
   private readonly QUESTIONS_PER_ROUND: number = 10;
 
@@ -40,20 +47,20 @@ export class GameMainPageComponent {
         this.alreadyAskedQuestions = [];
     }
     // looks for a new random index until one is created that is not yet in the alreadyAskedQuestions array
-    let randomIndex;
+    
     do {
-        randomIndex = Math.floor(Math.random() * this.questions.length);
-    } while (this.alreadyAskedQuestions.includes(randomIndex));
+        this.randomIndex = Math.floor(Math.random() * this.questions.length);
+    } while (this.alreadyAskedQuestions.includes(this.randomIndex));
     // updates the question and answers
-    this.question = this.questions[randomIndex].question;
-    this.answer1 = this.questions[randomIndex].answer1;
-    this.answer2 = this.questions[randomIndex].answer2;
-    this.answer3 = this.questions[randomIndex].answer3;
-    this.answer4 = this.questions[randomIndex].answer4;
-    this.rightAnswer = this.questions[randomIndex].right_answer;
+    this.question = this.questions[this.randomIndex].question;
+    this.answer1 = this.questions[this.randomIndex].answer1;
+    this.answer2 = this.questions[this.randomIndex].answer2;
+    this.answer3 = this.questions[this.randomIndex].answer3;
+    this.answer4 = this.questions[this.randomIndex].answer4;
+    this.rightAnswer = this.questions[this.randomIndex].right_answer;
 
     // adds the index to alreadyAskedQuestions array
-    this.alreadyAskedQuestions.push(randomIndex);
+    this.alreadyAskedQuestions.push(this.randomIndex);
 }
 
   async getNextQuestion() {
@@ -61,9 +68,10 @@ export class GameMainPageComponent {
       this.showEndScreen();
       return;
     }
-    const randomIndex = this.selectRandomQuestionIndex();
+    this.randomIndex = this.selectRandomQuestionIndex();
+    console.log(this.randomIndex)
     this.resetAnswerColors(); 
-    this.updateCurrentQuestion(randomIndex);
+    this.updateCurrentQuestion(this.randomIndex);
     this.disableNextButton();
   }
   
@@ -82,17 +90,16 @@ export class GameMainPageComponent {
   }
   
   private isGameComplete(): boolean {
-    console.log(this.currentQuestion)
     return this.currentQuestion > this.questions.length ||
            this.currentQuestion % this.QUESTIONS_PER_ROUND === 0;
   }
 
   private selectRandomQuestionIndex(): number {
-    let randomIndex;
+    let newRandomIndex;
     do {
-      randomIndex = Math.floor(Math.random() * this.questions.length);
-    } while (this.alreadyAskedQuestions.includes(randomIndex));
-    return randomIndex;
+      newRandomIndex = Math.floor(Math.random() * this.questions.length);
+    } while (this.alreadyAskedQuestions.includes(newRandomIndex));
+    return newRandomIndex;
   }
 
   answer(selection: string) {
@@ -104,9 +111,14 @@ export class GameMainPageComponent {
       } else {
         const rightElement = document.getElementById(this.rightAnswer);
         selectedElement.classList.add('bg-danger');
-        rightElement?.classList.add('bg-success')
+        rightElement?.classList.add('bg-success');
+        setTimeout(() => {
+          this.explanationDialog!.openDialog();
+        }, 600);
       }
     } 
+   
+
     this.enableNextButton()
   }
 
