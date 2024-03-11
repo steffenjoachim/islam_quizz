@@ -1,2 +1,9 @@
-<button mat-button (click)=" openDialog()">Erklärung anschauen</button>
-
+<button 
+  mat-button 
+  [disabled]="!questionAnswered" 
+  type="button"
+  (click)="openExplanation()" 
+  id="explanation-button" 
+>
+  Erklärung anschauen
+</button>

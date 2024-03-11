@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {
   MatDialog,
   MatDialogActions,
@@ -24,26 +24,35 @@ import { ExplanationComponent } from '../explanation/explanation.component';
   styleUrl: './explanation-dialog.component.scss'
 })
 
-export class ExplanationDialogComponent implements OnInit {
+export class ExplanationDialogComponent {
   @Input() randomIndex: number = 0;
+  @Input() questionAnswered: boolean = false;
 
   constructor(public dialog: MatDialog) {}
 
-  ngOnInit() {
-    console.log('randomIndex in ExplanationDialogComponent:', this.randomIndex);
-  }
-
   openDialog() {
-    console.log('randomIndex in ExplanationDialogComponent:', this.randomIndex);
     const dialogRef = this.dialog.open(ExplanationComponent, {
       data: {
         randomIndex: this.randomIndex
       }
     });
   
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      // Hier können Sie weitere Aktionen ausführen, wenn der Dialog geschlossen wird
-    });
+    // dialogRef.afterClosed().subscribe(result => {
+    //   console.log('The dialog was closed');
+    // });
   }
+
+  enableExplanationButton(){
+    const explanationButton = document.getElementById(
+      'explanation-button'
+    ) as HTMLButtonElement;
+    if (explanationButton) {
+      explanationButton.disabled = false;
+    }
+  }  
+
+  openExplanation(){
+    this.openDialog();
+  }
+
 }

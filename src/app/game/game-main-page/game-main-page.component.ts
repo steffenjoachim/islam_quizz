@@ -1,8 +1,16 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, Input, ElementRef, ViewChild } from '@angular/core';
-// import { SvgIconComponent } from '../svg-icon/svg-icon.component';
+import {
+  MatDialog,
+  MatDialogActions,
+  MatDialogClose,
+  MatDialogContent,
+  MatDialogTitle,
+  MatDialogModule,
+} from '@angular/material/dialog';
+import { AfterViewInit, Component, EventEmitter, Output, Input, ElementRef, ViewChild } from '@angular/core';
 import { QUESTIONS } from '../../../environments/questions';
 import { ExplanationDialogComponent } from '../explanation-dialog/explanation-dialog.component';
+import { ExplanationComponent } from '../explanation/explanation.component';
 
 
 @Component({
@@ -22,13 +30,18 @@ export class GameMainPageComponent {
   answer3: string = '';
   answer4: string = '';
   rightAnswer: string = '';
+  questionAnswered: boolean = false;
   alreadyAskedQuestions: any = [];
   game_over: boolean = false;
   @Input() randomIndex: number = 0;
 
   @ViewChild(ExplanationDialogComponent) explanationDialog: ExplanationDialogComponent | undefined;
+  @Output() dialogReady: EventEmitter<void> = new EventEmitter<void>();
 
   private readonly QUESTIONS_PER_ROUND: number = 10;
+
+  constructor(public dialog: MatDialog) {}
+
 
   ngOnInit() {
     this.showPlayScreen();
@@ -69,10 +82,10 @@ export class GameMainPageComponent {
       return;
     }
     this.randomIndex = this.selectRandomQuestionIndex();
-    console.log(this.randomIndex)
     this.resetAnswerColors(); 
     this.updateCurrentQuestion(this.randomIndex);
     this.disableNextButton();
+    this.disableExplanationButton();
   }
   
   resetAnswerColors() {
@@ -81,6 +94,16 @@ export class GameMainPageComponent {
       element.classList.remove('bg-success', 'bg-danger');
     });
   }
+
+  private disableExplanationButton(){
+    const explanationButton = document.getElementById(
+      'explanation-button'
+    ) as HTMLButtonElement;
+    if (explanationButton) {
+      explanationButton.disabled = true;
+    }
+  }
+
 
   disableNextButton() {
     const nextButton = document.getElementById('next-button') as HTMLButtonElement;
@@ -102,25 +125,37 @@ export class GameMainPageComponent {
     return newRandomIndex;
   }
 
+  componentReady() {
+    this.dialogReady.emit();
+  }
+
   answer(selection: string) {
     const selectedElement = document.getElementById(selection);
     if (selectedElement) {
       if (selection === this.rightAnswer) {
         selectedElement.classList.add('bg-success');
-        this.rightQuestions += 1;
+        this.rightQuestions += 1; 
+        if (this.explanationDialog) {
+          this.explanationDialog.enableExplanationButton();
+        }
       } else {
         const rightElement = document.getElementById(this.rightAnswer);
         selectedElement.classList.add('bg-danger');
         rightElement?.classList.add('bg-success');
         setTimeout(() => {
-          this.explanationDialog!.openDialog();
+          if (this.explanationDialog) {
+            this.explanationDialog.openDialog();
+          }
         }, 600);
       }
     } 
-   
-
-    this.enableNextButton()
+    this.enableNextButton();
+    this.questionAnswered = true;
+    if (this.explanationDialog) {
+      this.explanationDialog.enableExplanationButton();
+    }
   }
+  
 
   private enableNextButton(){
     const nextButton = document.getElementById(
@@ -144,6 +179,10 @@ export class GameMainPageComponent {
 
   showEndScreen() {
     this.game_over = true;
+    this.currentQuestion = 1;
+  }
+
+  showGoodbyScreen() {
     this.currentQuestion = 1;
   }
 }

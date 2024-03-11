@@ -17,7 +17,6 @@ export class ExplanationComponent implements OnInit {
 
   ngOnInit() {
     this.randomIndex = this.data.randomIndex;
-    console.log(this.randomIndex)
     this.renderExplanation();
   }
 

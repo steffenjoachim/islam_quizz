@@ -112,30 +112,30 @@ export const QUESTIONS: any = [
         "explanation": `<h2>j</h2>`
     },
     {
-        "question": "11 - In welchem Jahr wurde der Gesandte Allahs Muhammad Segen und Heil Allahs auf ihm geboren?",
-        "answer1": "Im Jahr des Elefanten",
-        "answer2": "Im Jahr der Kuh",
-        "answer3": "Im Jahr der Spinne",
-        "answer4": "Im Jahr der Ameise",
+        "question": "11 - Wer war der erste Gesandte Allahs Segen und Heil Allahs auf ihnen allen?",
+        "answer1": "Nuh (Noa)",
+        "answer2": "Adam",
+        "answer3": "Idris",
+        "answer4": "Ibrahim (Abraham)",
         "right_answer": '1',
         "explanation": `<h2>k</h2>`
     },
     {
-        "question": "12 - Wieviele Säulen hat der Islam?",
-        "answer1": "6",
-        "answer2": "5",
-        "answer3": "4",
-        "answer4": "3",
+        "question": "12 - Gabe es Propheten oder Gesandte unter den Frauen oder Djinn?",
+        "answer1": "Ja",
+        "answer2": "Nein",
+        "answer3": "Frauen: ja, Djinn: nein",
+        "answer4": "Frauen: nein, Djinn: ja",
         "right_answer": '2',
         "explanation": `<h2>l</h2>`
     },
     {
-        "question": "13 - Wieviele Säulen hat der Iman (Glaube)?",
-        "answer1": "3",
-        "answer2": "4",
-        "answer3": "5",
-        "answer4": "6",
-        "right_answer": '4',
+        "question": "13 - Der wievielte Monat im islamischen (hijri) Kalender ist der Ramadan?",
+        "answer1": "7",
+        "answer2": "8",
+        "answer3": "9",
+        "answer4": "10",
+        "right_answer": '3',
         "explanation": `<h2>m</h2>`
     },
     {
