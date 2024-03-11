@@ -55,7 +55,14 @@ export const QUESTIONS: any = [
         "answer3": "Abdullah",
         "answer4": "Abu Djahil",
         "right_answer": '3',
-        "explanation": `<h2>d</h2>`
+        "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 48px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 48px':>Die richtige Antwort war Abdullah!</h2>
+        <ul>
+            <li>Abu Talib war sein Onkel, bei dem er Segen und Heil Allahs auf ihm, nach dem Tod seiner Mutter Amina aufwuchs. Sie starb als er Segen und Heil Allahs auf ihm sechs Jahre alt war.</li>
+            <li>Abdull Mutallib war sein Großvater</li>
+            <li>Abu Djahil war ein Stammesführer der Quraisch (des Stammes des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm) und einer seiner stärksten Gegner.</li>
+        </ul>
+        </div>`
     },
     {
         "question": "5 - Wie hieß die erste Frau des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
@@ -136,34 +143,56 @@ export const QUESTIONS: any = [
         "answer3": "9",
         "answer4": "10",
         "right_answer": '3',
-        "explanation": `<h2>m</h2>`
+        "explanation":  ` <div style='display: flex; flex-direction: column; font-size: 24px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px; font-size: 28px':>Die Namen der islamischen (hijri) Monate sind:</h2>
+            <p>1. Muharram</p>
+            <p>2. Safar</p>
+            <p>3. Rabi' al-Awwal (Rabi' I)</p>
+            <p>4. Rabi' al-Thani (Rabi' II)</p>
+            <p>5. Jumada al-Awwal (Jumada I)</p>
+            <p>6. Jumada al-Thani (Jumada II)</p>
+            <p>7. Rajab</p>
+            <p>8. Sha'ban</p>
+            <p>9. Ramadan</p>
+            <p>10. Shawwal</p>
+            <p>11. Dhu al-Qi'dah</p>
+            <p>12. Dhu al-Hijjah</p>
+        </div>`
     },
     {
-        "question": "14 -  Wie hieß der Vater des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
-        "answer1": "Abu Talib",
-        "answer2": "Abddul Mutallib",
-        "answer3": "Abdullah",
-        "answer4": "Abu Djahil",
-        "right_answer": '3',
+        "question": "14 -  Sind die Eltern des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm, als Muslime gestorben?",
+        "answer1": "Ja",
+        "answer2": "Nein",
+        "answer3": "Vater: ja, Mutter: nein.",
+        "answer4": "Vater: nein, Mutter: ja",
+        "right_answer": '2',
         "explanation": `<h2>n</h2>`
     },
     {
-        "question": "15 - Wie hieß die erste Frau des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
-        "answer1": "Aischa",
-        "answer2": "Fatima",
-        "answer3": "Umm Salama",
-        "answer4": "Khadija",
+        "question": "15 - Aus was hat Allah der Erhabene den Menschen erschaffen?",
+        "answer1": "Wasser",
+        "answer2": "Feuer",
+        "answer3": "Licht",
+        "answer4": "Lehm",
         "right_answer": '4',
-        "explanation": `<h2>o</h2>`
+        "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px':>Die richtige Antwort war Lehm!</h2>
+        <ul>
+            <li>Aus Wasser hat Allah der Erhabene keine Lebewesen direkt erschaffen. Die männliche Samenflüssigkeit heißt im Arabischen auch Wasser (Ma' ماء), so dass jeder Mensch nach Adam und seiner Frau Hawa Heil Allahs auf ihmen, aus "Wasser" erschaffen wurde.</li>
+            <li>Aus Feuer hat Allah der Erhabene die Djinn erschaffen.</li>
+            <li>Aus Licht hat Allah der Erhabene die Engel erschaffen.</li>
+        </ul>
+        <span>Die Evolutionslüge ist Unglaube und wer daran glaubt ist kein Muslim (außer er hat eine Entschuldigung, die Allah der Erhabene annehmen würde).</span>
+        </div>`
     },
     {
-        "question": "16 - In welchem Jahr fand die Schlacht von Badr statt?",
-        "answer1": "im Jahr 1 nach Hijra",
-        "answer2": "im Jahr 2 nach Hijra",
-        "answer3": "im Jahr 3 nach Hijra",
-        "answer4": "im Jahr 4 nach Hijra",
+        "question": "16 - Welcher dieser Monate ist kein heiliger Monat?",
+        "answer1": "Rajab (der siebte Monat)",
+        "answer2": "Ramadan (der neunte Monat)",
+        "answer3": "Dhu al-Qi'dah (der elfte Monat)",
+        "answer4": "Dhu al-Hijjah (der zwölfte Monat)",
         "right_answer": '2',
-        "explanation": `<h2>p</h2>`
+        "explanation": `<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 48px; margin-left: 12px; margin-right: 12px;'><span>Als heilige Monate werden die Monate Muharram (der erste Monat), Rajab (der siebte Monat), Dhu al-Qi'dah (der elfte Monat) und Dhu al-Hijjah (der zwölfte Monat)bezeichnet. In ihnen ist das Kämpfen verboten und Sünden zählen stärker als in den anderen Monaten.</span><br><br><span>Ramadan gehört nicht dazu. Im Ramadan fand z.B. die Eroberung Mekkas durch die Muslime statt.</span><br><br><span>Die heiligen Monate gabe es auch schon vor der Zeit des Islam.</span><div>`
     },
     {
         "question": "17 -In welchem Jahr wurde Ramadan Pflicht?",
