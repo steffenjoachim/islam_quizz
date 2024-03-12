@@ -31,6 +31,7 @@ export class GameMainPageComponent {
   answer4: string = '';
   rightAnswer: string = '';
   questionAnswered: boolean = false;
+  answeringAllowed: boolean = true;
   alreadyAskedQuestions: any = [];
   game_over: boolean = false;
   @Input() randomIndex: number = 0;
@@ -47,11 +48,13 @@ export class GameMainPageComponent {
     this.showPlayScreen();
   }
 
+
   showPlayScreen() {
       this.game_over = false;
       this.rightQuestions = 0;
       this.getQuestion();
   }
+
 
   async getQuestion() {
     // checkes if all questions have been ask
@@ -76,7 +79,8 @@ export class GameMainPageComponent {
     this.alreadyAskedQuestions.push(this.randomIndex);
 }
 
-  async getNextQuestion() {
+
+async getNextQuestion() {
     if (this.isGameComplete()) {
       this.showEndScreen();
       return;
@@ -86,16 +90,19 @@ export class GameMainPageComponent {
     this.updateCurrentQuestion(this.randomIndex);
     this.disableNextButton();
     this.disableExplanationButton();
+    this.answeringAllowed = true;
   }
   
-  resetAnswerColors() {
+
+resetAnswerColors() {
     const answerElements = document.querySelectorAll('.quizanswer');
     answerElements.forEach(element => {
       element.classList.remove('bg-success', 'bg-danger');
     });
   }
 
-  private disableExplanationButton(){
+
+private disableExplanationButton(){
     const explanationButton = document.getElementById(
       'explanation-button'
     ) as HTMLButtonElement;
@@ -105,19 +112,21 @@ export class GameMainPageComponent {
   }
 
 
-  disableNextButton() {
+disableNextButton() {
     const nextButton = document.getElementById('next-button') as HTMLButtonElement;
     if (nextButton) {
       nextButton.disabled = true;
     }
   }
   
-  private isGameComplete(): boolean {
+
+private isGameComplete(): boolean {
     return this.currentQuestion > this.questions.length ||
            this.currentQuestion % this.QUESTIONS_PER_ROUND === 0;
   }
 
-  private selectRandomQuestionIndex(): number {
+
+private selectRandomQuestionIndex(): number {
     let newRandomIndex;
     do {
       newRandomIndex = Math.floor(Math.random() * this.questions.length);
@@ -129,26 +138,17 @@ export class GameMainPageComponent {
     this.dialogReady.emit();
   }
 
-  answer(selection: string) {
+
+answer(selection: string) {
+    if (!this.answeringAllowed) return;
+    this.answeringAllowed = false;
     const selectedElement = document.getElementById(selection);
-    if (selectedElement) {
-      if (selection === this.rightAnswer) {
-        selectedElement.classList.add('bg-success');
-        this.rightQuestions += 1; 
-        if (this.explanationDialog) {
-          this.explanationDialog.enableExplanationButton();
-        }
-      } else {
-        const rightElement = document.getElementById(this.rightAnswer);
-        selectedElement.classList.add('bg-danger');
-        rightElement?.classList.add('bg-success');
-        setTimeout(() => {
-          if (this.explanationDialog) {
-            this.explanationDialog.openDialog();
-          }
-        }, 600);
-      }
-    } 
+    if (!selectedElement) return;
+    if (selection === this.rightAnswer) {
+      this.handleCorrectAnswer(selectedElement);
+    } else {
+      this.handleIncorrectAnswer(selectedElement);
+    }
     this.enableNextButton();
     this.questionAnswered = true;
     if (this.explanationDialog) {
@@ -157,7 +157,28 @@ export class GameMainPageComponent {
   }
   
 
-  private enableNextButton(){
+handleCorrectAnswer(selectedElement: HTMLElement) {
+    selectedElement.classList.add('bg-success');
+    this.rightQuestions += 1;
+    if (this.explanationDialog) {
+      this.explanationDialog.enableExplanationButton();
+    }
+  }
+  
+
+handleIncorrectAnswer(selectedElement: HTMLElement) {
+    const rightElement = document.getElementById(this.rightAnswer);
+    selectedElement.classList.add('bg-danger');
+    rightElement?.classList.add('bg-success');
+    setTimeout(() => {
+      if (this.explanationDialog) {
+        this.explanationDialog.openDialog();
+      }
+    }, 600);
+  }
+  
+
+private enableNextButton(){
     const nextButton = document.getElementById(
       'next-button'
     ) as HTMLButtonElement;
@@ -166,7 +187,8 @@ export class GameMainPageComponent {
     }
   }
 
-  private updateCurrentQuestion(index: number): void {
+
+private updateCurrentQuestion(index: number): void {
     this.currentQuestion += 1;
     this.alreadyAskedQuestions.push(index);
     this.question = this.questions[index].question;
@@ -177,12 +199,15 @@ export class GameMainPageComponent {
     this.rightAnswer = this.questions[index].right_answer;
   }
 
-  showEndScreen() {
+
+showEndScreen() {
     this.game_over = true;
     this.currentQuestion = 1;
+    this.answeringAllowed = true;
   }
 
-  showGoodbyScreen() {
+
+showGoodbyScreen() {
     this.currentQuestion = 1;
   }
 }

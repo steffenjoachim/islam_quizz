@@ -6,7 +6,8 @@ export const QUESTIONS: any = [
         "answer3": "Im Jahr der Spinne",
         "answer4": "Im Jahr der Ameise",
         "right_answer": '1',
-        "explanation": `<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'><span>Das Jahr in dem der Gesandte Allahs Muhammad Segen und Heil Allahs auf ihm geboren, heißt das Jahr des Elefantens, weil in diesm Jahr die Ereignisse stattfanden, die in der Sure Fil (Der Elefant) beschrieben sind.</span><br><span>Eine feindliche Armee hatte Mekka angegriffen und wollte die Ka'ba zerstören.</span><div>`
+        "explanation": `<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'><span>Das Jahr in dem der Gesandte Allahs Muhammad Segen und Heil Allahs auf ihm geboren, heißt das Jahr des Elefantens, weil in diesm Jahr die Ereignisse stattfanden, die in der Sure Fil (Der Elefant) beschrieben sind.</span><br><span>Eine feindliche Armee hatte Mekka angegriffen und wollte die Ka'ba zerstören.</span>
+        <div>`
     },
     {
         "question": "2 - Wieviele Säulen hat der Islam?",
@@ -98,7 +99,18 @@ export const QUESTIONS: any = [
         "answer3": "9",
         "answer4": "10",
         "right_answer": '3',
-        "explanation": `<h2>h</h2>`
+        "explanation":  ` <div style='display: flex; flex-direction: column; font-size: 14px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px; font-size: 16px; line-height: 1;':>Die <strong>neun</strong> Bedingungen für die Richtigkeit des Gebetes sind:</h2>
+            <p>1. Islam - man muss Muslim sein.</p>
+            <p>2. Reife - man muss die Bedingungen der Reife (Alter oder Geschlechtsreife) erfüllen.</p>
+            <p>3. Klarer Verstand - also weder geistig behindert, verückt oder besoffen.</p>
+            <p>4. Eintritt der Zeit - ein Gebet vor dem Eintritt der Zeit ist ungültig.</p>
+            <p>5. Rituelle Reinheit - Wudu oder Tayamum.</p>
+            <p>6. Entfernung von Unreinheiten (Najasa) von sich selbst und am Gebetsort.</p>
+            <p>7. Körper (Aura) mit Kleidung bedeckt - hier gelten für Männer und Frauen unterschiedliche Regelungen - bitte recherchieren!</p>
+            <p>8. Qibla (Gebetsrichtung), also Richtung Mekka, einnehmen.</p>
+            <p>9. Absicht das Gebet zu verrichten.</p>
+        </div>`
     },
     {
         "question": "9 - Wer war der erste Nachfolger (Khalif) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",

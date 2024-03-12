@@ -5,6 +5,7 @@ import {
   MatDialogActions,
   MatDialogClose,
   MatDialogContent,
+  MatDialogRef,
   MatDialogTitle,
 } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
@@ -28,6 +29,9 @@ export class ExplanationDialogComponent {
   @Input() randomIndex: number = 0;
   @Input() questionAnswered: boolean = false;
 
+  dialogRef: MatDialogRef<ExplanationDialogComponent> | undefined;
+
+
   constructor(public dialog: MatDialog) {}
 
   openDialog() {
@@ -36,11 +40,15 @@ export class ExplanationDialogComponent {
         randomIndex: this.randomIndex
       }
     });
-  
-    // dialogRef.afterClosed().subscribe(result => {
-    //   console.log('The dialog was closed');
-    // });
   }
+
+  
+  closeDialog() {
+    if (this.dialogRef) {
+      this.dialogRef.close();
+    }
+  }
+  
 
   enableExplanationButton(){
     const explanationButton = document.getElementById(
