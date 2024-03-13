@@ -1,6 +1,6 @@
 export const QUESTIONS: any = [
     {
-        "question": "1 - In welchem Jahr wurde der Gesandte Allahs Muhammad Segen und Heil Allahs auf ihm geboren?",
+        "question": "In welchem Jahr wurde der Gesandte Allahs Muhammad Segen und Heil Allahs auf ihm geboren?",
         "answer1": "Im Jahr des Elefanten",
         "answer2": "Im Jahr der Kuh",
         "answer3": "Im Jahr der Spinne",
@@ -10,7 +10,7 @@ export const QUESTIONS: any = [
         <div>`
     },
     {
-        "question": "2 - Wieviele Säulen hat der Islam?",
+        "question": "Wieviele Säulen hat der Islam?",
         "answer1": "6",
         "answer2": "5",
         "answer3": "4",
@@ -31,7 +31,7 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
-        "question": "3 - Wieviele Säulen hat der Iman (Glaube)?",
+        "question": "Wieviele Säulen hat der Iman (Glaube)?",
         "answer1": "3",
         "answer2": "4",
         "answer3": "5",
@@ -50,7 +50,7 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
-        "question": "4 -  Wie hieß der Vater des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
+        "question": "Wie hieß der Vater des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
         "answer1": "Abu Talib",
         "answer2": "Abddul Mutallib",
         "answer3": "Abdullah",
@@ -66,16 +66,16 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
-        "question": "5 - Wie hieß die erste Frau des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
-        "answer1": "Aischa",
-        "answer2": "Fatima",
-        "answer3": "Umm Salama",
-        "answer4": "Khadija",
+        "question": "Wie hieß die erste Frau des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
+        "answer1": "Aischa Allahs Zufriedenheit sei mit ihr",
+        "answer2": "Fatima Allahs Zufriedenheit sei mit ihr",
+        "answer3": "Umm Salama Allahs Zufriedenheit sei mit ihr",
+        "answer4": "Khadija Allahs Zufriedenheit sei mit ihr",
         "right_answer": '4',
         "explanation": `<h2>e</h2>`
     },
     {
-        "question": "6 - In welchem Jahr fand die Schlacht von Badr statt?",
+        "question": "In welchem Jahr fand die Schlacht von Badr statt?",
         "answer1": "im Jahr 1 nach Hijra",
         "answer2": "im Jahr 2 nach Hijra",
         "answer3": "im Jahr 3 nach Hijra",
@@ -84,7 +84,7 @@ export const QUESTIONS: any = [
         "explanation": `<h2>f</h2>`
     },
     {
-        "question": "7 -In welchem Jahr wurde Ramadan Pflicht?",
+        "question": "In welchem Jahr wurde Ramadan Pflicht?",
         "answer1": "im Jahr 2 nach Hijra",
         "answer2": "im Jahr 3 nach Hijra",
         "answer3": "im Jahr 4 nach Hijra",
@@ -93,7 +93,7 @@ export const QUESTIONS: any = [
         "explanation": `<h2>g</h2>`
     },
     {
-        "question": "8 - Wieviele Bedingungen für die Richtigkeit des Gebetes gibt es?",
+        "question": "Wieviele Bedingungen für die Richtigkeit des Gebetes gibt es?",
         "answer1": "7",
         "answer2": "8",
         "answer3": "9",
@@ -113,34 +113,42 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
-        "question": "9 - Wer war der erste Nachfolger (Khalif) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
-        "answer1": "Umar",
-        "answer2": "Ali",
-        "answer3": "Uthman",
-        "answer4": "Abu Bakr",
+        "question": "Wer war der erste Nachfolger (Khalif) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
+        "answer1": "Umar Allahs Zufriedenheit sei mit ihm",
+        "answer2": "Ali Allahs Zufriedenheit sei mit ihm",
+        "answer3": "Uthman Allahs Zufriedenheit sei mit ihm",
+        "answer4": "Abu Bakr Allahs Zufriedenheit sei mit ihm",
         "right_answer": '4',
-        "explanation": `<h2>i</h2>`
+        "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px':>Die vier Khalife (Nachfolger) des Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm und ihre Regierungszeiten.</h2>
+        <ul>
+            <li><strong>Abu Bakr Allahs Zufriedenheit sei mit ihm: ca. 2 Jahre von 11-13 Hijri.</strong></li>
+            <li>Umar Ibn al-Khattab Allahs Zufriedenheit sei mit ihm: ca. 10 Jahre von 13-23 Hijri.</li>
+            <li>Uthman Ibn Affan Allahs Zufriedenheit sei mit ihm: ca. 12 Jahre von 23-35 Hijri.</li>
+            <li>Ali Ibn Abi Talib: 656-661 n. Chr. Allahs Zufriedenheit sei mit ihm: ca. 5 Jahre von 35-40 Hijri.</li>
+        </ul>
+        </div>`
     },
     {
-        "question": "10 - Wer hat die meisten Hadithe (Überlieferungen) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm überliefert?",
-        "answer1": "Aischa",
-        "answer2": "Abdullah Ibn Umar",
-        "answer3": "Abu Huraira",
-        "answer4": "Annas Ibn Malik",
+        "question": "Wer hat die meisten Hadithe (Überlieferungen) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm überliefert?",
+        "answer1": "Aischa Allahs Zufriedenheit sei mit ihr",
+        "answer2": "Abdullah Ibn Umar Allahs Zufriedenheit sei mit ihm",
+        "answer3": "Abu Huraira Allahs Zufriedenheit sei mit ihm",
+        "answer4": "Annas Ibn Malik Allahs Zufriedenheit sei mit ihm",
         "right_answer": '3',
         "explanation": `<h2>j</h2>`
     },
     {
-        "question": "11 - Wer war der erste Gesandte Allahs Segen und Heil Allahs auf ihnen allen?",
-        "answer1": "Nuh (Noa)",
-        "answer2": "Adam",
-        "answer3": "Idris",
-        "answer4": "Ibrahim (Abraham)",
+        "question": "Wer war der erste Gesandte Allahs Segen und Heil Allahs auf ihnen allen?",
+        "answer1": "Nuh (Noa) Heil Allahs auf ihm",
+        "answer2": "Adam Heil Allahs auf ihm",
+        "answer3": "Idris Heil Allahs auf ihm",
+        "answer4": "Ibrahim (Abraham) Heil Allahs auf ihm",
         "right_answer": '1',
         "explanation": `<h2>k</h2>`
     },
     {
-        "question": "12 - Gabe es Propheten oder Gesandte unter den Frauen oder Djinn?",
+        "question": "Gabe es Propheten oder Gesandte unter den Frauen oder Djinn?",
         "answer1": "Ja",
         "answer2": "Nein",
         "answer3": "Frauen: ja, Djinn: nein",
@@ -149,7 +157,7 @@ export const QUESTIONS: any = [
         "explanation": `<h2>l</h2>`
     },
     {
-        "question": "13 - Der wievielte Monat im islamischen (hijri) Kalender ist der Ramadan?",
+        "question": "Der wievielte Monat im islamischen (hijri) Kalender ist der Ramadan?",
         "answer1": "7",
         "answer2": "8",
         "answer3": "9",
@@ -172,7 +180,7 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
-        "question": "14 -  Sind die Eltern des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm, als Muslime gestorben?",
+        "question": "Werden die Eltern des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm im Paradies (Djannah) sein?",
         "answer1": "Ja",
         "answer2": "Nein",
         "answer3": "Vater: ja, Mutter: nein.",
@@ -181,7 +189,7 @@ export const QUESTIONS: any = [
         "explanation": `<h2>n</h2>`
     },
     {
-        "question": "15 - Aus was hat Allah der Erhabene den Menschen erschaffen?",
+        "question": "Aus was hat Allah der Erhabene den Menschen erschaffen?",
         "answer1": "Wasser",
         "answer2": "Feuer",
         "answer3": "Licht",
@@ -198,7 +206,7 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
-        "question": "16 - Welcher dieser Monate ist kein heiliger Monat?",
+        "question": "Welcher dieser Monate ist kein heiliger Monat?",
         "answer1": "Rajab (der siebte Monat)",
         "answer2": "Ramadan (der neunte Monat)",
         "answer3": "Dhu al-Qi'dah (der elfte Monat)",
@@ -207,39 +215,69 @@ export const QUESTIONS: any = [
         "explanation": `<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 48px; margin-left: 12px; margin-right: 12px;'><span>Als heilige Monate werden die Monate Muharram (der erste Monat), Rajab (der siebte Monat), Dhu al-Qi'dah (der elfte Monat) und Dhu al-Hijjah (der zwölfte Monat)bezeichnet. In ihnen ist das Kämpfen verboten und Sünden zählen stärker als in den anderen Monaten.</span><br><br><span>Ramadan gehört nicht dazu. Im Ramadan fand z.B. die Eroberung Mekkas durch die Muslime statt.</span><br><br><span>Die heiligen Monate gabe es auch schon vor der Zeit des Islam.</span><div>`
     },
     {
-        "question": "17 -In welchem Jahr wurde Ramadan Pflicht?",
-        "answer1": "im Jahr 2 nach Hijra",
-        "answer2": "im Jahr 3 nach Hijra",
-        "answer3": "im Jahr 4 nach Hijra",
-        "answer4": "im Jahr 5 nach Hijra",
+        "question": "Wer begleitete den Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm bei der Auswanderung (Hijra) nach Medina?",
+        "answer1": "Abu Bakr Allahs Zufriedenheit sei mit ihm",
+        "answer2": "Ali Allahs Zufriedenheit sei mit ihm",
+        "answer3": "Umar Allahs Zufriedenheit sei mit ihm",
+        "answer4": "Uthman Allahs Zufriedenheit sei mit ihm",
         "right_answer": '1',
         "explanation": `<h2>q</h2>`
     },
     {
-        "question": "18 - Wieviele Bedingungen für die Richtigkeit des Gebetes gibt es?",
-        "answer1": "7",
-        "answer2": "8",
-        "answer3": "9",
-        "answer4": "10",
+        "question": "Wie heißt der erste Monat des islamischen Jahres?",
+        "answer1": "Safar ",
+        "answer2": "Sha'ban",
+        "answer3": "Muharram",
+        "answer4": "Rajab",
         "right_answer": '3',
-        "explanation": `<h2>r</h2>`
+        "explanation":  ` <div style='display: flex; flex-direction: column; font-size: 24px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px; font-size: 28px':>Die Namen der islamischen (hijri) Monate sind:</h2>
+            <p>1. Muharram</p>
+            <p>2. Safar</p>
+            <p>3. Rabi' al-Awwal (Rabi' I)</p>
+            <p>4. Rabi' al-Thani (Rabi' II)</p>
+            <p>5. Jumada al-Awwal (Jumada I)</p>
+            <p>6. Jumada al-Thani (Jumada II)</p>
+            <p>7. Rajab</p>
+            <p>8. Sha'ban</p>
+            <p>9. Ramadan</p>
+            <p>10. Shawwal</p>
+            <p>11. Dhu al-Qi'dah</p>
+            <p>12. Dhu al-Hijjah</p>
+        </div>`
     },
     {
-        "question": "19 - Wer war der erste Nachfolger (Khalif) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
-        "answer1": "Umar",
-        "answer2": "Ali",
-        "answer3": "Uthman",
-        "answer4": "Abu Bakr",
-        "right_answer": '4',
-        "explanation": `<h2>s</h2>`
+        "question": "Wer war der zweite Nachfolger (Khalif) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
+        "answer1": "Umar Allahs Zufriedenheit sei mit ihm",
+        "answer2": "Ali Allahs Zufriedenheit sei mit ihm",
+        "answer3": "Uthman Allahs Zufriedenheit sei mit ihm",
+        "answer4": "Abu Bakr Allahs Zufriedenheit sei mit ihm",
+        "right_answer": '1',
+        "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px':>Die vier Khalife (Nachfolger) des Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm und ihre Regierungszeiten.</h2>
+        <ul>
+            <li>Abu Bakr Allahs Zufriedenheit sei mit ihm: ca. 2 Jahre von 11-13 Hijri.</li>
+            <li><strong>Umar Ibn al-Khattab Allahs Zufriedenheit sei mit ihm: ca. 10 Jahre von 13-23 Hijri.</strong></li>
+            <li>Uthman Ibn Affan Allahs Zufriedenheit sei mit ihm: ca. 12 Jahre von 23-35 Hijri.</li>
+            <li>Ali Ibn Abi Talib: 656-661 n. Chr. Allahs Zufriedenheit sei mit ihm: ca. 5 Jahre von 35-40 Hijri.</li>
+        </ul>
+        </div>`
     },
     {
-        "question": "20 - Wer hat die meisten Hadithe (Überlieferungen) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm überliefert?",
-        "answer1": "Aischa",
-        "answer2": "Abdullah Ibn Umar",
-        "answer3": "Abu Huraira",
-        "answer4": "Annas Ibn Malik",
+        "question": "Welcher der vier Kalifen nach dem Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm regierte am längsten?",
+        "answer1": "Umar Allahs Zufriedenheit sei mit ihm",
+        "answer2": "Ali Allahs Zufriedenheit sei mit ihm",
+        "answer3": "Uthman Allahs Zufriedenheit sei mit ihm",
+        "answer4": "Abu Bakr Allahs Zufriedenheit sei mit ihm",
         "right_answer": '3',
-        "explanation": `<h2>t</h2>`
+        "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px':>Die Regierungszeiten der vier Khalife (Nachfolger) des Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm</h2>
+        <ul>
+            <li>Abu Bakr Allahs Zufriedenheit sei mit ihm: ca. 2 Jahre von 11-13 Hijri.</li>
+            <li>Umar Ibn al-Khattab Allahs Zufriedenheit sei mit ihm: ca. 10 Jahre von 13-23 Hijri.</li>
+            <li><strong>Uthman Ibn Affan Allahs Zufriedenheit sei mit ihm: ca. 12 Jahre von 23-35 Hijri.</strong></li>
+            <li>Ali Ibn Abi Talib: 656-661 n. Chr. Allahs Zufriedenheit sei mit ihm: ca. 5 Jahre von 35-40 Hijri.</li>
+        </ul>
+        </div>`
     },
 ]
