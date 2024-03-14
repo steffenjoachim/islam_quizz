@@ -1,21 +1,27 @@
 export const QUESTIONS: any = [
     {
+        "id": '1',
         "question": "In welchem Jahr wurde der Gesandte Allahs Muhammad Segen und Heil Allahs auf ihm geboren?",
-        "answer1": "Im Jahr des Elefanten",
-        "answer2": "Im Jahr der Kuh",
-        "answer3": "Im Jahr der Spinne",
-        "answer4": "Im Jahr der Ameise",
-        "right_answer": '1',
+        "answers": [
+                "Im Jahr des Elefanten",
+                "Im Jahr der Kuh",
+                "Im Jahr der Spinne",
+                "Im Jahr der Ameise"
+        ],
+        "right_answer": 0,
         "explanation": `<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'><span>Das Jahr in dem der Gesandte Allahs Muhammad Segen und Heil Allahs auf ihm geboren, heißt das Jahr des Elefantens, weil in diesm Jahr die Ereignisse stattfanden, die in der Sure Fil (Der Elefant) beschrieben sind.</span><br><span>Eine feindliche Armee hatte Mekka angegriffen und wollte die Ka'ba zerstören.</span>
         <div>`
     },
     {
+        "id": '2',
         "question": "Wieviele Säulen hat der Islam?",
-        "answer1": "6",
-        "answer2": "5",
-        "answer3": "4",
-        "answer4": "3",
-        "right_answer": '2',
+        "answers": [
+            "6",
+            "5",
+            "4",
+            "3"
+         ],
+        "right_answer": 1,
         "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'>
         <h2 style='margin-bottom: 16px':>Die 5 Säulen des Islam</h2>
         <ul>
@@ -31,12 +37,15 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
+       "id": '3',
         "question": "Wieviele Säulen hat der Iman (Glaube)?",
-        "answer1": "3",
-        "answer2": "4",
-        "answer3": "5",
-        "answer4": "6",
-        "right_answer": '4',
+        "answers": [ 
+            "3",
+            "4",
+            "5",
+            "6"
+         ],
+        "right_answer": 3,
         "explanation":  ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 24px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'>
         <h2 style='margin-bottom: 16px; font-size: 32px':>Die 6 Säulen des Imans (Glaubens)</h2>
         <ul>
@@ -50,12 +59,15 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
+        "id": '4',
         "question": "Wie hieß der Vater des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
-        "answer1": "Abu Talib",
-        "answer2": "Abddul Mutallib",
-        "answer3": "Abdullah",
-        "answer4": "Abu Djahil",
-        "right_answer": '3',
+        "answers": [ 
+            "Abu Talib",
+            "Abddul Mutallib",
+            "Abdullah",
+            "Abu Djahil"
+        ],  
+        "right_answer": 2,
         "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 48px; margin-left: 12px; margin-right: 12px;'>
         <h2 style='margin-bottom: 48px':>Die richtige Antwort war Abdullah!</h2>
         <ul>
@@ -66,39 +78,51 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
+        "id": '5',
         "question": "Wie hieß die erste Frau des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
-        "answer1": "Aischa Allahs Zufriedenheit sei mit ihr",
-        "answer2": "Fatima Allahs Zufriedenheit sei mit ihr",
-        "answer3": "Umm Salama Allahs Zufriedenheit sei mit ihr",
-        "answer4": "Khadija Allahs Zufriedenheit sei mit ihr",
-        "right_answer": '4',
+        "answers": [
+            "Aischa Allahs Zufriedenheit sei mit ihr",
+            "Fatima Allahs Zufriedenheit sei mit ihr",
+            "Umm Salama Allahs Zufriedenheit sei mit ihr",
+            "Khadija Allahs Zufriedenheit sei mit ihr"
+        ],
+        "right_answer": 3,
         "explanation": `<h2>e</h2>`
     },
     {
+        "id": '6',
         "question": "In welchem Jahr fand die Schlacht von Badr statt?",
-        "answer1": "im Jahr 1 nach Hijra",
-        "answer2": "im Jahr 2 nach Hijra",
-        "answer3": "im Jahr 3 nach Hijra",
-        "answer4": "im Jahr 4 nach Hijra",
-        "right_answer": '2',
+        "answers": [
+            "im Jahr 1 nach Hijra",
+            "im Jahr 2 nach Hijra",
+            "im Jahr 3 nach Hijra",
+            "im Jahr 4 nach Hijra"
+        ],
+        "right_answer": 1,
         "explanation": `<h2>f</h2>`
     },
     {
+        "id": '7',
         "question": "In welchem Jahr wurde Ramadan Pflicht?",
-        "answer1": "im Jahr 2 nach Hijra",
-        "answer2": "im Jahr 3 nach Hijra",
-        "answer3": "im Jahr 4 nach Hijra",
-        "answer4": "im Jahr 5 nach Hijra",
-        "right_answer": '1',
+        "answers": [
+            "im Jahr 2 nach Hijra",
+            "im Jahr 3 nach Hijra",
+            "im Jahr 4 nach Hijra",
+            "im Jahr 5 nach Hijra"
+        ],
+        "right_answer": 0,
         "explanation": `<h2>g</h2>`
     },
     {
+        "id": '8',
         "question": "Wieviele Bedingungen für die Richtigkeit des Gebetes gibt es?",
-        "answer1": "7",
-        "answer2": "8",
-        "answer3": "9",
-        "answer4": "10",
-        "right_answer": '3',
+        "answers": [ 
+            "7",
+            "8",
+            "9",
+            "10"
+        ],
+        "right_answer": 2,
         "explanation":  ` <div style='display: flex; flex-direction: column; font-size: 14px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
         <h2 style='margin-bottom: 16px; font-size: 16px; line-height: 1;':>Die <strong>neun</strong> Bedingungen für die Richtigkeit des Gebetes sind:</h2>
             <p>1. Islam - man muss Muslim sein.</p>
@@ -113,12 +137,15 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
+        "id": '9',
         "question": "Wer war der erste Nachfolger (Khalif) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
-        "answer1": "Umar Allahs Zufriedenheit sei mit ihm",
-        "answer2": "Ali Allahs Zufriedenheit sei mit ihm",
-        "answer3": "Uthman Allahs Zufriedenheit sei mit ihm",
-        "answer4": "Abu Bakr Allahs Zufriedenheit sei mit ihm",
-        "right_answer": '4',
+        "answers": [
+            "Umar Allahs Zufriedenheit sei mit ihm",
+            "Ali Allahs Zufriedenheit sei mit ihm",
+            "Uthman Allahs Zufriedenheit sei mit ihm",
+            "Abu Bakr Allahs Zufriedenheit sei mit ihm"
+        ],
+        "right_answer": 3,
         "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'>
         <h2 style='margin-bottom: 16px':>Die vier Khalife (Nachfolger) des Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm und ihre Regierungszeiten.</h2>
         <ul>
@@ -130,39 +157,51 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
+        "id": '10',
         "question": "Wer hat die meisten Hadithe (Überlieferungen) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm überliefert?",
-        "answer1": "Aischa Allahs Zufriedenheit sei mit ihr",
-        "answer2": "Abdullah Ibn Umar Allahs Zufriedenheit sei mit ihm",
-        "answer3": "Abu Huraira Allahs Zufriedenheit sei mit ihm",
-        "answer4": "Annas Ibn Malik Allahs Zufriedenheit sei mit ihm",
-        "right_answer": '3',
+        "answers": [
+            "Aischa Allahs Zufriedenheit sei mit ihr",
+            "Abdullah Ibn Umar Allahs Zufriedenheit sei mit ihm",
+            "Abu Huraira Allahs Zufriedenheit sei mit ihm",
+            "Annas Ibn Malik Allahs Zufriedenheit sei mit ihm"
+        ],
+        "right_answer": 2,
         "explanation": `<h2>j</h2>`
     },
     {
+        "id": '11',
         "question": "Wer war der erste Gesandte Allahs Segen und Heil Allahs auf ihnen allen?",
-        "answer1": "Nuh (Noa) Heil Allahs auf ihm",
-        "answer2": "Adam Heil Allahs auf ihm",
-        "answer3": "Idris Heil Allahs auf ihm",
-        "answer4": "Ibrahim (Abraham) Heil Allahs auf ihm",
-        "right_answer": '1',
+        "answers": [
+            "Nuh (Noa) Heil Allahs auf ihm",
+            "Adam Heil Allahs auf ihm",
+            "Idris Heil Allahs auf ihm",
+            "Ibrahim (Abraham) Heil Allahs auf ihm"
+        ],
+        "right_answer": 0,
         "explanation": `<h2>k</h2>`
     },
     {
+        "id": '12',
         "question": "Gabe es Propheten oder Gesandte unter den Frauen oder Djinn?",
-        "answer1": "Ja",
-        "answer2": "Nein",
-        "answer3": "Frauen: ja, Djinn: nein",
-        "answer4": "Frauen: nein, Djinn: ja",
-        "right_answer": '2',
+        "answers": [
+            "Ja",
+            "Nein",
+            "Frauen: ja, Djinn: nein",
+            "Frauen: nein, Djinn: ja"
+            ],
+        "right_answer": 1,
         "explanation": `<h2>l</h2>`
     },
     {
+        "id": '13',
         "question": "Der wievielte Monat im islamischen (hijri) Kalender ist der Ramadan?",
-        "answer1": "7",
-        "answer2": "8",
-        "answer3": "9",
-        "answer4": "10",
-        "right_answer": '3',
+        "answers": [
+            "7",
+            "8",
+            "9",
+            "10"
+        ],
+        "right_answer": 2,
         "explanation":  ` <div style='display: flex; flex-direction: column; font-size: 24px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
         <h2 style='margin-bottom: 16px; font-size: 28px':>Die Namen der islamischen (hijri) Monate sind:</h2>
             <p>1. Muharram</p>
@@ -180,21 +219,27 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
+        "id": '14',
         "question": "Werden die Eltern des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm im Paradies (Djannah) sein?",
-        "answer1": "Ja",
-        "answer2": "Nein",
-        "answer3": "Vater: ja, Mutter: nein.",
-        "answer4": "Vater: nein, Mutter: ja",
-        "right_answer": '2',
+        "answers": [
+            "Ja",
+            "Nein",
+            "Vater: ja, Mutter: nein.",
+            "Vater: nein, Mutter: ja"
+        ],
+        "right_answer": 1,
         "explanation": `<h2>n</h2>`
     },
     {
+        "id": '15',
         "question": "Aus was hat Allah der Erhabene den Menschen erschaffen?",
-        "answer1": "Wasser",
-        "answer2": "Feuer",
-        "answer3": "Licht",
-        "answer4": "Lehm",
-        "right_answer": '4',
+        "answers": [
+            "Wasser",
+            "Feuer",
+            "Licht",
+            "Lehm"
+        ],
+        "right_answer": 3,
         "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
         <h2 style='margin-bottom: 16px':>Die richtige Antwort war Lehm!</h2>
         <ul>
@@ -206,30 +251,39 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
+        "id": '16',
         "question": "Welcher dieser Monate ist kein heiliger Monat?",
-        "answer1": "Rajab (der siebte Monat)",
-        "answer2": "Ramadan (der neunte Monat)",
-        "answer3": "Dhu al-Qi'dah (der elfte Monat)",
-        "answer4": "Dhu al-Hijjah (der zwölfte Monat)",
-        "right_answer": '2',
+        "answers": [
+            "Rajab (der siebte Monat)",
+            "Ramadan (der neunte Monat)",
+            "Dhu al-Qi'dah (der elfte Monat)",
+            "Dhu al-Hijjah (der zwölfte Monat)"
+        ],
+        "right_answer": 1,
         "explanation": `<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 48px; margin-left: 12px; margin-right: 12px;'><span>Als heilige Monate werden die Monate Muharram (der erste Monat), Rajab (der siebte Monat), Dhu al-Qi'dah (der elfte Monat) und Dhu al-Hijjah (der zwölfte Monat)bezeichnet. In ihnen ist das Kämpfen verboten und Sünden zählen stärker als in den anderen Monaten.</span><br><br><span>Ramadan gehört nicht dazu. Im Ramadan fand z.B. die Eroberung Mekkas durch die Muslime statt.</span><br><br><span>Die heiligen Monate gabe es auch schon vor der Zeit des Islam.</span><div>`
     },
     {
+        "id": '17',
         "question": "Wer begleitete den Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm bei der Auswanderung (Hijra) nach Medina?",
-        "answer1": "Abu Bakr Allahs Zufriedenheit sei mit ihm",
-        "answer2": "Ali Allahs Zufriedenheit sei mit ihm",
-        "answer3": "Umar Allahs Zufriedenheit sei mit ihm",
-        "answer4": "Uthman Allahs Zufriedenheit sei mit ihm",
-        "right_answer": '1',
+        "answers": [
+            "Abu Bakr Allahs Zufriedenheit sei mit ihm",
+            "Ali Allahs Zufriedenheit sei mit ihm",
+            "Umar Allahs Zufriedenheit sei mit ihm",
+            "Uthman Allahs Zufriedenheit sei mit ihm"
+         ],
+        "right_answer": 0,
         "explanation": `<h2>q</h2>`
     },
     {
+        "id": '18',
         "question": "Wie heißt der erste Monat des islamischen Jahres?",
-        "answer1": "Safar ",
-        "answer2": "Sha'ban",
-        "answer3": "Muharram",
-        "answer4": "Rajab",
-        "right_answer": '3',
+        "answers": [
+            "Safar ",
+            "Sha'ban",
+            "Muharram",
+            "Rajab"
+        ],
+        "right_answer": 2,
         "explanation":  ` <div style='display: flex; flex-direction: column; font-size: 24px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
         <h2 style='margin-bottom: 16px; font-size: 28px':>Die Namen der islamischen (hijri) Monate sind:</h2>
             <p>1. Muharram</p>
@@ -247,12 +301,15 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
+        "id": '19',
         "question": "Wer war der zweite Nachfolger (Khalif) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
-        "answer1": "Umar Allahs Zufriedenheit sei mit ihm",
-        "answer2": "Ali Allahs Zufriedenheit sei mit ihm",
-        "answer3": "Uthman Allahs Zufriedenheit sei mit ihm",
-        "answer4": "Abu Bakr Allahs Zufriedenheit sei mit ihm",
-        "right_answer": '1',
+        "answers": [
+            "Umar Allahs Zufriedenheit sei mit ihm",
+            "Ali Allahs Zufriedenheit sei mit ihm",
+            "Uthman Allahs Zufriedenheit sei mit ihm",
+            "Abu Bakr Allahs Zufriedenheit sei mit ihm"
+        ],
+        "right_answer": 0,
         "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'>
         <h2 style='margin-bottom: 16px':>Die vier Khalife (Nachfolger) des Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm und ihre Regierungszeiten.</h2>
         <ul>
@@ -264,12 +321,15 @@ export const QUESTIONS: any = [
         </div>`
     },
     {
+        "id": '20',
         "question": "Welcher der vier Kalifen nach dem Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm regierte am längsten?",
-        "answer1": "Umar Allahs Zufriedenheit sei mit ihm",
-        "answer2": "Ali Allahs Zufriedenheit sei mit ihm",
-        "answer3": "Uthman Allahs Zufriedenheit sei mit ihm",
-        "answer4": "Abu Bakr Allahs Zufriedenheit sei mit ihm",
-        "right_answer": '3',
+        "answers": [
+            "Umar Allahs Zufriedenheit sei mit ihm",
+            "Ali Allahs Zufriedenheit sei mit ihm",
+            "Uthman Allahs Zufriedenheit sei mit ihm",
+            "Abu Bakr Allahs Zufriedenheit sei mit ihm"
+        ],
+        "right_answer": 2,
         "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'>
         <h2 style='margin-bottom: 16px':>Die Regierungszeiten der vier Khalife (Nachfolger) des Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm</h2>
         <ul>

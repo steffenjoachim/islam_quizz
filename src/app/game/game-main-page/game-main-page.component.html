@@ -42,7 +42,14 @@
         <!-- Question -->
         <h5 id="question" class="card-title">{{ this.question }}</h5>
         <!-- Answers -->
-        <div class="card mb-2" (click)="answer('1')">
+        @for (item of answers; track item.id; let index = $index) {
+          <div class="card mb-2" (click)="answer(index)">
+            <div id="answer{{ index }}" class="card-body quizanswer">{{ item }}</div>
+          </div>
+        }
+        
+
+        <!-- <div class="card mb-2" (click)="answer('1')">
           <div id="1" class="card-body quizanswer">{{ this.answer1 }}</div>
         </div>
         <div class="card mb-2" (click)="answer('2')">
@@ -53,7 +60,7 @@
         </div>
         <div class="card mb-2" (click)="answer('4')">
           <div id="4" class="card-body quizanswer">{{ this.answer4 }}</div>
-        </div>
+        </div> -->
         <!-- Game-Foooter -->
         <div class="question-footer">
           <span>

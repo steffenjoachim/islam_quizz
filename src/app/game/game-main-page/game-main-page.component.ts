@@ -25,11 +25,12 @@ export class GameMainPageComponent {
   rightQuestions: number = 0;
   questions = QUESTIONS;
   question: string = '';
+  answers: any = [];
   answer1: string = 'ABC';
   answer2: string = '';
   answer3: string = '';
   answer4: string = '';
-  rightAnswer: string = '';
+  rightAnswer: number = 0;
   questionAnswered: boolean = false;
   answeringAllowed: boolean = true;
   alreadyAskedQuestions: any = [];
@@ -69,10 +70,7 @@ export class GameMainPageComponent {
     } while (this.alreadyAskedQuestions.includes(this.randomIndex));
     // updates the question and answers
     this.question = this.questions[this.randomIndex].question;
-    this.answer1 = this.questions[this.randomIndex].answer1;
-    this.answer2 = this.questions[this.randomIndex].answer2;
-    this.answer3 = this.questions[this.randomIndex].answer3;
-    this.answer4 = this.questions[this.randomIndex].answer4;
+    this.answers = this.questions[this.randomIndex].answers;
     this.rightAnswer = this.questions[this.randomIndex].right_answer;
 
     // adds the index to alreadyAskedQuestions array
@@ -139,10 +137,10 @@ private selectRandomQuestionIndex(): number {
   }
 
 
-answer(selection: string) {
+  answer(selection: number) {
     if (!this.answeringAllowed) return;
     this.answeringAllowed = false;
-    const selectedElement = document.getElementById(selection);
+    const selectedElement = document.getElementById(`answer${selection}`);
     if (!selectedElement) return;
     if (selection === this.rightAnswer) {
       this.handleCorrectAnswer(selectedElement);
@@ -154,7 +152,7 @@ answer(selection: string) {
     if (this.explanationDialog) {
       this.explanationDialog.enableExplanationButton();
     }
-  }
+  }  
   
 
 handleCorrectAnswer(selectedElement: HTMLElement) {
@@ -166,16 +164,18 @@ handleCorrectAnswer(selectedElement: HTMLElement) {
   }
   
 
-handleIncorrectAnswer(selectedElement: HTMLElement) {
-    const rightElement = document.getElementById(this.rightAnswer);
+  handleIncorrectAnswer(selectedElement: HTMLElement) {
+    const rightElement = document.getElementById(`answer${this.rightAnswer}`);
     selectedElement.classList.add('bg-danger');
-    rightElement?.classList.add('bg-success');
+    if (rightElement) {
+      rightElement.classList.add('bg-success');
+    }
     setTimeout(() => {
       if (this.explanationDialog) {
         this.explanationDialog.openDialog();
       }
     }, 600);
-  }
+}
   
 
 private enableNextButton(){
@@ -192,10 +192,7 @@ private updateCurrentQuestion(index: number): void {
     this.currentQuestion += 1;
     this.alreadyAskedQuestions.push(index);
     this.question = this.questions[index].question;
-    this.answer1 = this.questions[index].answer1;
-    this.answer2 = this.questions[index].answer2;
-    this.answer3 = this.questions[index].answer3;
-    this.answer4 = this.questions[index].answer4;
+    this.answers = this.questions[index].answers;
     this.rightAnswer = this.questions[index].right_answer;
   }
 

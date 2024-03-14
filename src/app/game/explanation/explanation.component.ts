@@ -33,7 +33,6 @@ export class ExplanationComponent implements OnInit {
 
 
   closeDialog() {
-    console.log('closed');
     this.dialog.closeAll();
   }
 }
