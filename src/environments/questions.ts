@@ -147,7 +147,7 @@ export const QUESTIONS: any = [
         ],
         "right_answer": 3,
         "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'>
-        <h2 style='margin-bottom: 16px':>Die vier Khalife (Nachfolger) des Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm und ihre Regierungszeiten.</h2>
+        <h2 style='margin-bottom: 16px'>Die vier Khalife (Nachfolger) des Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm und ihre Regierungszeiten.</h2>
         <ul>
             <li><strong>Abu Bakr Allahs Zufriedenheit sei mit ihm: ca. 2 Jahre von 11-13 Hijri.</strong></li>
             <li>Umar Ibn al-Khattab Allahs Zufriedenheit sei mit ihm: ca. 10 Jahre von 13-23 Hijri.</li>
@@ -160,13 +160,23 @@ export const QUESTIONS: any = [
         "id": '10',
         "question": "Wer hat die meisten Hadithe (Überlieferungen) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm überliefert?",
         "answers": [
-            "Aischa Allahs Zufriedenheit sei mit ihr",
-            "Abdullah Ibn Umar Allahs Zufriedenheit sei mit ihm",
+            "Aischa bint Abu Bakr Allahs Zufriedenheit sei mit ihr",
+            "Abdullah Ibn Abbas Allahs Zufriedenheit sei mit ihm",
             "Abu Huraira Allahs Zufriedenheit sei mit ihm",
-            "Annas Ibn Malik Allahs Zufriedenheit sei mit ihm"
+            "Anas Ibn Malik Allahs Zufriedenheit sei mit ihm"
         ],
         "right_answer": 2,
-        "explanation": `<h2>j</h2>`
+        "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 12px; margin-top: 32px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 8px; font-size: 16px; line-height: 1;'><strong>Diese Gefährten Zufriedenheit sei mit ihm haben mehr als 1000 Hadithe des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm überliefert: </strong></h2>
+            <p style='margin-bottom: 6px;'>1. Abu Huraira Allahs Zufriedenheit sei mit ihm - Überlieferte etwa 5374 Hadithe.</p>
+            <p style='margin-bottom: 6px;'>2. Anas ibn Malik Allahs Zufriedenheit sei mit ihm - Überlieferte etwa 2286 Hadithe.</p>
+            <p style='margin-bottom: 6px;'>3. Aisha bint Abu Bakr Allahs Zufriedenheit sei mit ihr - Überlieferte etwa 2210 Hadithe.</p>
+            <p style='margin-bottom: 6px;'>4. Abdullah ibn Abbas Allahs Zufriedenheit sei mit ihm - Überlieferte etwa 1660 Hadithe.</p>
+            <p style='margin-bottom: 6px;'>5. Abdullah Ibn Umar Allahs Zufriedenheit sei mit ihm - Überlieferte etwa 1630 Hadithe.</p>
+            <p style='margin-bottom: 6px;'>6. Jabir ibn Abdullah Allahs Zufriedenheit sei mit ihm - Überlieferte etwa 1540 Hadithe.</p>
+            <p style='margin-bottom: 6px;'>7. Abu Musa al-Ashari Allahs Zufriedenheit sei mit ihm - Überlieferte etwa 1350 Hadithe.</p>
+            <p style='margin-bottom: 6px;'><strong>Die genauen Zahlen können je nach Quellen variieren!<strong></p>
+        </div>`
     },
     {
         "id": '11',
@@ -203,7 +213,7 @@ export const QUESTIONS: any = [
         ],
         "right_answer": 2,
         "explanation":  ` <div style='display: flex; flex-direction: column; font-size: 24px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
-        <h2 style='margin-bottom: 16px; font-size: 28px':>Die Namen der islamischen (hijri) Monate sind:</h2>
+        <h2 style='margin-bottom: 16px; font-size: 28px'>Die Namen der islamischen (hijri) Monate sind:</h2>
             <p>1. Muharram</p>
             <p>2. Safar</p>
             <p>3. Rabi' al-Awwal (Rabi' I)</p>
@@ -252,7 +262,7 @@ export const QUESTIONS: any = [
     },
     {
         "id": '16',
-        "question": "Welcher dieser Monate ist kein heiliger Monat?",
+        "question": "Welcher dieser Monate ist keiner der vier heiligen Monate?",
         "answers": [
             "Rajab (der siebte Monat)",
             "Ramadan (der neunte Monat)",
@@ -285,8 +295,8 @@ export const QUESTIONS: any = [
         ],
         "right_answer": 2,
         "explanation":  ` <div style='display: flex; flex-direction: column; font-size: 24px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
-        <h2 style='margin-bottom: 16px; font-size: 28px':>Die Namen der islamischen (hijri) Monate sind:</h2>
-            <p>1. Muharram</p>
+        <h2 style='margin-bottom: 16px; font-size: 28px'>Die Namen der islamischen (hijri) Monate sind:</h2>
+            <p>1. <strong>Muharram</strong></p>
             <p>2. Safar</p>
             <p>3. Rabi' al-Awwal (Rabi' I)</p>
             <p>4. Rabi' al-Thani (Rabi' II)</p>
@@ -337,6 +347,130 @@ export const QUESTIONS: any = [
             <li>Umar Ibn al-Khattab Allahs Zufriedenheit sei mit ihm: ca. 10 Jahre von 13-23 Hijri.</li>
             <li><strong>Uthman Ibn Affan Allahs Zufriedenheit sei mit ihm: ca. 12 Jahre von 23-35 Hijri.</strong></li>
             <li>Ali Ibn Abi Talib: 656-661 n. Chr. Allahs Zufriedenheit sei mit ihm: ca. 5 Jahre von 35-40 Hijri.</li>
+        </ul>
+        </div>`
+    },
+    {
+        "id": '21',
+        "question": "Wer war der dritte Nachfolger (Khalif) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
+        "answers": [
+            "Umar Allahs Zufriedenheit sei mit ihm",
+            "Ali Allahs Zufriedenheit sei mit ihm",
+            "Uthman Allahs Zufriedenheit sei mit ihm",
+            "Abu Bakr Allahs Zufriedenheit sei mit ihm"
+        ],
+        "right_answer": 2,
+        "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px':>Die vier Khalife (Nachfolger) des Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm und ihre Regierungszeiten.</h2>
+        <ul>
+            <li>Abu Bakr Allahs Zufriedenheit sei mit ihm: ca. 2 Jahre von 11-13 Hijri.</li>
+            <li>Umar Ibn al-Khattab Allahs Zufriedenheit sei mit ihm: ca. 10 Jahre von 13-23 Hijri.</li>
+            <li><strong>Uthman Ibn Affan Allahs Zufriedenheit sei mit ihm: ca. 12 Jahre von 23-35 Hijri.</strong></li>
+            <li>Ali Ibn Abi Talib: 656-661 n. Chr. Allahs Zufriedenheit sei mit ihm: ca. 5 Jahre von 35-40 Hijri.</li>
+        </ul>
+        </div>`
+    },
+    {
+        "id": '22',
+        "question": "Wer war der vierte Nachfolger (Khalif) des Gesandten Allahs Muhammad Segen und Heil Allahs auf ihm?",
+        "answers": [
+            "Umar Allahs Zufriedenheit sei mit ihm",
+            "Ali Allahs Zufriedenheit sei mit ihm",
+            "Uthman Allahs Zufriedenheit sei mit ihm",
+            "Abu Bakr Allahs Zufriedenheit sei mit ihm"
+        ],
+        "right_answer": 1,
+        "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px':>Die vier Khalife (Nachfolger) des Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm und ihre Regierungszeiten.</h2>
+        <ul>
+            <li>Abu Bakr Allahs Zufriedenheit sei mit ihm: ca. 2 Jahre von 11-13 Hijri.</li>
+            <li>Umar Ibn al-Khattab Allahs Zufriedenheit sei mit ihm: ca. 10 Jahre von 13-23 Hijri.</li>
+            <li>Uthman Ibn Affan Allahs Zufriedenheit sei mit ihm: ca. 12 Jahre von 23-35 Hijri.</li>
+            <li><strong>Ali Ibn Abi Talib: 656-661 n. Chr. Allahs Zufriedenheit sei mit ihm: ca. 5 Jahre von 35-40 Hijri.</li>
+        </ul>
+        </div>`
+    },
+    {
+        "id": '23',
+        "question": "Welcher der vier Kalifen nach dem Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm regierte am kürzesten?",
+        "answers": [
+            "Umar Allahs Zufriedenheit sei mit ihm",
+            "Ali Allahs Zufriedenheit sei mit ihm",
+            "Uthman Allahs Zufriedenheit sei mit ihm",
+            "Abu Bakr Allahs Zufriedenheit sei mit ihm"
+        ],
+        "right_answer": 3,
+        "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 24px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px':>Die Regierungszeiten der vier Khalife (Nachfolger) des Gesandten Allahs Mohamed Segen und Heil Allahs auf ihm</h2>
+        <ul>
+            <li><strong>Abu Bakr Allahs Zufriedenheit sei mit ihm: ca. 2 Jahre von 11-13 Hijri.</strong></li>
+            <li>Umar Ibn al-Khattab Allahs Zufriedenheit sei mit ihm: ca. 10 Jahre von 13-23 Hijri.</li>
+            <li>Uthman Ibn Affan Allahs Zufriedenheit sei mit ihm: ca. 12 Jahre von 23-35 Hijri.</li>
+            <li>Ali Ibn Abi Talib: 656-661 n. Chr. Allahs Zufriedenheit sei mit ihm: ca. 5 Jahre von 35-40 Hijri.</li>
+        </ul>
+        </div>`
+    },
+    {
+        "id": '24',
+        "question": "Wie heißt der letze Monat des islamischen Jahres?",
+        "answers": [
+            "Dhu al-Hijjah ",
+            "Sha'ban",
+            "Muharram",
+            "Rajab"
+        ],
+        "right_answer": 0,
+        "explanation":  ` <div style='display: flex; flex-direction: column; font-size: 24px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px; font-size: 28px'>Die Namen der islamischen (hijri) Monate sind:</h2>
+            <p>1. Muharram</p>
+            <p>2. Safar</p>
+            <p>3. Rabi' al-Awwal (Rabi' I)</p>
+            <p>4. Rabi' al-Thani (Rabi' II)</p>
+            <p>5. Jumada al-Awwal (Jumada I)</p>
+            <p>6. Jumada al-Thani (Jumada II)</p>
+            <p>7. Rajab</p>
+            <p>8. Sha'ban</p>
+            <p>9. Ramadan</p>
+            <p>10. Shawwal</p>
+            <p>11. Dhu al-Qi'dah</p>
+            <p>12. <strong>Dhu al-Hijjah</strong></p>
+        </div>`
+    },
+    {
+        "id": '25',
+        "question": "Aus was hat Allah der Erhabene die Djinn erschaffen?",
+        "answers": [
+            "Wasser",
+            "Feuer",
+            "Licht",
+            "Lehm"
+        ],
+        "right_answer": 1,
+        "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px':>Die richtige Antwort war Lehm!</h2>
+        <ul>
+            <li>Aus Wasser hat Allah der Erhabene keine Lebewesen direkt erschaffen. Die männliche Samenflüssigkeit heißt im Arabischen auch Wasser (Ma' ماء), so dass jeder Mensch nach Adam und seiner Frau Hawa Heil Allahs auf ihmen, aus "Wasser" erschaffen wurde.</li>
+            <li><strong>Aus Feuer hat Allah der Erhabene die Djinn erschaffen.</strong></li>
+            <li>Aus Licht hat Allah der Erhabene die Engel erschaffen.</li>
+        </ul>
+        </div>`
+    },
+    {
+        "id": '26',
+        "question": "Aus was hat Allah der Erhabene die Engel erschaffen?",
+        "answers": [
+            "Wasser",
+            "Feuer",
+            "Licht",
+            "Lehm"
+        ],
+        "right_answer": 2,
+        "explanation": ` <div style='display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; margin-top: 16px; margin-left: 12px; margin-right: 12px;'>
+        <h2 style='margin-bottom: 16px':>Die richtige Antwort war Lehm!</h2>
+        <ul>
+            <li>Aus Wasser hat Allah der Erhabene keine Lebewesen direkt erschaffen. Die männliche Samenflüssigkeit heißt im Arabischen auch Wasser (Ma' ماء), so dass jeder Mensch nach Adam und seiner Frau Hawa Heil Allahs auf ihmen, aus "Wasser" erschaffen wurde.</li>
+            <li>Aus Feuer hat Allah der Erhabene die Djinn erschaffen.</li>
+            <li><strong>Aus Licht hat Allah der Erhabene die Engel erschaffen.</strong></li>
         </ul>
         </div>`
     },

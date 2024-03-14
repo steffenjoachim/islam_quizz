@@ -26,10 +26,6 @@ export class GameMainPageComponent {
   questions = QUESTIONS;
   question: string = '';
   answers: any = [];
-  answer1: string = 'ABC';
-  answer2: string = '';
-  answer3: string = '';
-  answer4: string = '';
   rightAnswer: number = 0;
   questionAnswered: boolean = false;
   answeringAllowed: boolean = true;
@@ -56,15 +52,20 @@ export class GameMainPageComponent {
       this.getQuestion();
   }
 
-
-  async getQuestion() {
-    // checkes if all questions have been ask
+/**
+ * This function is used to check if all questions available have been asked
+ */
+  async resetAlreadyAskedQuestions() {
     if (this.alreadyAskedQuestions.length === this.questions.length) {
         // resets the alreadyAskedQuestions array
         this.alreadyAskedQuestions = [];
     }
+}
+
+async getQuestion() {
+    // the below called function will check if all questions available have been asked
+    await this.resetAlreadyAskedQuestions();
     // looks for a new random index until one is created that is not yet in the alreadyAskedQuestions array
-    
     do {
         this.randomIndex = Math.floor(Math.random() * this.questions.length);
     } while (this.alreadyAskedQuestions.includes(this.randomIndex));
@@ -72,24 +73,24 @@ export class GameMainPageComponent {
     this.question = this.questions[this.randomIndex].question;
     this.answers = this.questions[this.randomIndex].answers;
     this.rightAnswer = this.questions[this.randomIndex].right_answer;
-
     // adds the index to alreadyAskedQuestions array
     this.alreadyAskedQuestions.push(this.randomIndex);
 }
-
 
 async getNextQuestion() {
     if (this.isGameComplete()) {
       this.showEndScreen();
       return;
     }
+    await this.resetAlreadyAskedQuestions();
+    
     this.randomIndex = this.selectRandomQuestionIndex();
     this.resetAnswerColors(); 
     this.updateCurrentQuestion(this.randomIndex);
     this.disableNextButton();
     this.disableExplanationButton();
     this.answeringAllowed = true;
-  }
+}
   
 
 resetAnswerColors() {
