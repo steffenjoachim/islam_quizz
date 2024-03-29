@@ -27,7 +27,7 @@ h1 {
     position: absolute;
     bottom: 32px;
     span {
-        padding-right: 16px;
+        padding-right: 32px;
     }
 }
 
@@ -50,4 +50,9 @@ h1 {
 .button-container {
     display: flex;
     justify-content: space-between;
+}
+
+.three-answers {
+    margin-bottom: 40px;
+    margin-top: 40px;
 }

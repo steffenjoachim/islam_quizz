@@ -28,7 +28,7 @@
           <button class="btn btn-primary mt-4" (click)="showPlayScreen()">
             Weiter machen
           </button>
-          <a href="">
+          <a href>
             <button class="btn btn-primary mt-4" (click)="showGoodbyScreen()">
               Quiz beenden
             </button>
@@ -42,11 +42,22 @@
         <!-- Question -->
         <h5 id="question" class="card-title">{{ this.question }}</h5>
         <!-- Answers -->
+        @if(answers.length == 4) {
         @for (item of answers; track item.id; let index = $index) {
-          <div class="card mb-2" (click)="answer(index)">
-            <div id="answer{{ index }}" class="card-body quizanswer">{{ item }}</div>
-          </div>
+        <div class="card mb-2" (click)="answer(index)">
+          <div id="answer{{ index }}" class="card-body quizanswer">{{ item
+            }}</div>
+        </div>
         }
+        }
+        @if(answers.length == 3) {
+          @for (item of answers; track item.id; let index = $index) {
+          <div class="card three-answers" (click)="answer(index)">
+            <div id="answer{{ index }}" class="card-body quizanswer">{{ item
+              }}</div>
+          </div>
+          }
+          }
         <!-- Game-Foooter -->
         <div class="question-footer">
           <span>
